@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+ float nota1, nota2, soma, media;
+ int i=0;
+ 
+// entrad de dados
+ printf ( "digite a primeira nota:");
+    scanf("%f", &nota1);
+    
+
+    
+    
+    
+    
+    
+printf( "digite a segunda nota: ");
+scanf("%f", &nota2);
+
+//Processamento 
+
+media=(nota1 + nota2)/2;
+
+if( nota1 > 10 && nota2 > 10){
+    printf(" Notas invalidas, digite valores menores que 10. ");
+}else{
+
+printf("a sua media foi:%.2f\n",media);
+
+
+
+if (media >= 6){
+printf("APROVADO");    
+
+}
+
+else if (media >= 4 && media <= 5){
+    printf("você está de recuperação");
+}
+
+else{ printf("REPROVADO");
+}
+}
+}
+
+
