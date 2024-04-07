@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{ int numero;
+
+printf("digite um número \n" );
+scanf("%i",&numero);
+
+//o %2 divide o número até o final, até restar 0 ou diferente disso, assim sabe se é par ou impar 
+
+if (numero%2 == 0){
+    printf(" O número é par");
+}
+    else { printf("O número é impar");
+}
+    
+    
+}
+
