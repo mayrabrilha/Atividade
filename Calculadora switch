@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    
+    float n1, n2;
+    char caracter;
+    
+    printf("digite o primeiro número\n");
+    scanf("%f",&n1);
+    
+    printf("digite o segundo número\n");
+    scanf("%f",&n2);
+    
+    printf("digite um desses caracteres: + - * /\n");
+    scanf(" %c",&caracter);
+    
+    switch (caracter){
+        case '+':
+            printf("%.2f + %.2f = %.2f\n", n1, n2, n1 + n2);
+            break;
+        case '-':
+            printf("%.2f - %.2f = %.2f\n", n1, n2, n1 - n2);
+            break;
+        case '*':
+            printf("%.2f * %.2f = %.2f\n", n1, n2, n1 * n2);
+            break;
+        case '/':
+            if (n2 != 0) {
+                printf("%.2f / %.2f = %.2f\n", n1, n2, n1 / n2);
+            } else {
+                printf("Erro: Divisão por zero!\n");
+            }
+            break;
+    }
+}
+
