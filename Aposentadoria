@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{   
+    int idade,tempo;
+    printf("Simulador de aposentadoria \nDigite sua idade: \n");
+    scanf("%d", &idade);
+    
+        if(idade < 44){
+        printf("Você ainda esta jovem para se aposentar.");
+        }
+        else{
+    
+    printf("Digite seu tempo de serviço em anos: \n");
+    scanf("%d",&tempo);
+    
+    if(idade >= 65 ){
+    printf("Você tem direito a aposentadoria.");
+    }
+        else if(tempo >= 30 ){
+        printf("Você tem direito a aposentadoria.");
+        }
+            else if(idade >= 60 && tempo >= 25){
+            printf("Você tem direito a aposentadoria.");
+            }
+                else{
+                printf("Você ainda não tem direito a aposentadoria.");
+                }
+    
+
+    return 0;
+}}
+
