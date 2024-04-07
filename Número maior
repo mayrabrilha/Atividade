@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+
+{  float valor1, valor2;
+    
+    //entrada de valores
+    printf("digite um número:");
+    scanf("%f", &valor1);
+   
+    
+    printf("digite outro número:");
+    scanf("%f", &valor2);
+    
+    
+    // se o número for maior
+    if (valor1 > valor2){
+        printf("O primeiro valor inserido é o maior",valor1);    
+        }
+    
+    if(valor2 > valor1){
+            printf("O segundo valor inserido é o maior",valor2);
+            }
+    
+    if (valor1 == valor2){
+        printf("Os valores são iguais");
+    }
+    
+    
+}
+
